@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>❤️To making more memories with you my baby❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #c1121f;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      /* Add your background image here */
+      background-image: url('Back.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-color: #fff;
+    }
+
+    /* Semi-transparent white overlay for readability */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.85);
+      z-index: -1;
+    }
+
+
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #ffe6e6;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #c1121f;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-out;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-style: italic;
+      color: #c1121f;
+      background-color: #ffe6e6;
+    }
+
+
+    /* Mobile-friendly tweaks */
+    @media (max-width: 600px) {
+      header { padding: 60px 15px; }
+      header h1 { font-size: 1.6rem; }
+      section { padding: 60px 15px; }
+      .gallery { gap: 9px; }
+      .heart { width: 16px; height: 16px; }
+      .heart::before, .heart::after { width: 16px; height: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- Header -->
+  <header>
+    <h1>To making more memories with you my baby❤️</h1>
+  </header>
+
+  <!-- Messages -->
+  <section><h2>TO MY HUSBAND: Hi my baby, I wanted to do something special for you but i didn't know what exactly. Then it came to me, why not surprise him with something he would never expect. So I taught myself how to do this for you, soooo coool right?! I really hope you like and appreciate this little gesture I'm doing for you. It's actually giving me stress but anything and everything for my man of courseee<3</h2></section>
+  <section><h2>: Okay so hey, I know these past few months of our relationship have been rocky. Or let me say we have been going through some hardships but look at us overcoming all them?❤️that’s what makes our relationship even stronger baby! The fact that we can go through so many obstacles and still come out stronger makes this so worth it don’t you think? Now look, I know I can be very stressful and I am very sorry about that babe, some may say draining which can cause people to pull away, but please don't. I pray to God everyday to make me someone you wouldn't want to let go of eventually. I just want to try and make you happy. </h2></section>
+  <section><h2>My home: Baby, you know you are literally my safe place, my home. You make me the happiest person alive my nana, you bring out the best in me and I hope I do the same for you. Spending each and everyday with you just feels like an adventure I never want to stop living. I want to continue doing this whole life thing with you and only you my sweetheart and to continue making more memories with you. It’s literally us against the world!!</h2></section>
+  <section><h2>: I just want you to know that I love you so much my baby. More than words or this website can even describe. My love for you is the unconditional love, the love with with no boundaries and no limits. It’s a one of a kind love. A love that will never fade but only grow stronger. Please never doubt my love for you or ever think it redcued, because it will never! I LOVE YOU. </h2></section>
+  <section><h2>Don't forget: You are mine and I am yours forever and ever my sweet baby. You are my soulmate❤️!!</h2></section>
+ 
+  <!-- Gallery -->
+  <section>
+    <h2> 💕L and K Memories 💕</h2>
+    <div class="gallery">
+      <img src="images/photo1.jpg" alt="memory1">
+      <img src="images/photo2.jpg" alt="memory2">
+      <img src="images/photo3.jpg" alt="memory3">
+      <img src="images/photo4.jpg" alt="memory4">
+      <img src="images/photo5.jpg" alt="memory5">
+      <img src="images/photo6.jpg" alt="memory6">
+      <img src="images/photo7.jpg" alt="memory7">
+      <img src="images/photo8.jpg" alt="memory8">
+      <img src="images/photo9.jpg" alt="memory9">
+      <img src="images/photo10.jpg" alt="memory10">
+      <img src="images/photo11.jpg" alt="memory11">
+      <img src="images/photo12.jpg" alt="memory12">
+      <img src="images/photo13.jpg" alt="memory13">
+      <img src="images/photo14.jpg" alt="memory14">
+      <img src="images/photo15.jpg" alt="memory15">
+      <img src="images/photo16.jpg" alt="memory16">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Its you and I till death do us part my love. I will forever be yours, always ❤️
+  </header>
+
+ <!-- Background music with Play/Pause -->
+<div id="music-control" style="position:fixed; left:20px; top:20px; z-index:9999;">
+  <button id="musicBtn" aria-label="Play the song, tobetsa oo" style="background:#c1121f;color:white;border:none;padding:10px 14px;border-radius:8px;cursor:pointer;font-size:14px;">
+    Play the song, tobetsa oo▶️
+  </button>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="oursong.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const music = document.getElementById('bgMusic');
+  const btn = document.getElementById('musicBtn');
+  
+  // Set low volume
+  music.volume = 0.60;
+  
+  // Button click handler
+  btn.addEventListener('click', () => {
+    if (music.paused) {
+      music.play().then(() => {
+        btn.textContent = 'Pause song ⏸️';
+      }).catch((error) => {
+        console.error('Cannot play:', error);
+        btn.textContent = 'Click again to play ▶️';
+      });
+    } else {
+      music.pause();
+      btn.textContent = 'Play the song, tobetsa oo▶️';
+    }
+  });
+  
+  // Scroll reveal animation
+  const sections = document.querySelectorAll("section");
+  window.addEventListener("scroll", checkSections);
+  checkSections();
+  
+  function checkSections() {
+    const triggerBottom = window.innerHeight * 0.8;
+    sections.forEach(section => {
+      const top = section.getBoundingClientRect().top;
+      if (top < triggerBottom) {
+        section.classList.add("show");
+      }
+    });
+  }
+  </script>
+</body>
+</html>
